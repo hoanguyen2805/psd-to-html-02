@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/reset.css" type="text/css">
     <link rel="stylesheet" href="./styles/style.css" type="text/css">
@@ -254,19 +254,387 @@
             <div class="container">
                 <div class="row">
                     <div class="recent-courses__heading">
-
+                        <h2>Recent Courses</h2>
+                        <p>
+                            Films can shape the destiny of talented youngsters Courses.
+                        </p>
+                        <ul class="recent-courses__menu">
+                            <li><button class="btn btn-menu">All Categories</button></li>
+                            <li><button class="btn btn-menu">Art</button></li>
+                            <li><button class="btn btn-menu active">Exercise</button></li>
+                            <li><button class="btn btn-menu">Material Design</button></li>
+                            <li><button class="btn btn-menu">Music</button></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="row">
-
+                    <div class="col">1</div>
+                    <div class="col">2</div>
+                    <div class="col">3</div>
+                    <div class="col">4</div>
+                    <div class="col">5</div>
+                    <div class="col">6</div>
+                </div>
+                <div class="row">
+                    <button>
+                        VIEW ALL BLOG
+                    </button>
                 </div>
             </div>
         </section>
 
+        <section class="subscribe-testimonials">
+            <div class="container-fuild">
+                <div class="row">
+                    <div class="col">
+                        <div class="subscribe__img">
+                            <img src="./images/subscribe-icon.png" alt="icon-subscribe">
+                        </div>
+                        <div class="subscribe__content">
+                            <h3>Subscribe to our Newsletter</h3>
+                            <p>subscribe newsletter and get special and new updates and notifications</p>
+                            <form action="#">
+                                <input type="text" placeholder="Enter Your Email Address">
+                                <button class="btn btn-subscribe">SUBSCRIBE</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="testimonials__slider">
+                            <button class="btn btn-prev" onclick="plusSlides(-1)">&#10094;</button>
+                            <button class="btn btn-next" onclick="plusSlides(1)">&#10095;</button>
+                            <img src="./images/carousel01.png" alt="avatar" class="mySlides">
+                            <img src="./images/carousel02.png" alt="avatar" class="mySlides">
+                            <img src="./images/carousel03.png" alt="avatar" class="mySlides">
+                            <img src="./images/testimonials-dau-phay.png" alt="dau-phay">
+                        </div>
+                        <div class="testimonials__content">
+                            <h3>Testimonials</h3>
+                            <p>Lorem ipsum dolor sit amet, cons adipis som nas nibh dolor, m lorime uilimes nsectetur
+                                elit
+                                ipsum is ime uilimes nsectetur elit.
+                            </p>
+                            <div class="testimonials__user">
+                                <h5>Lophie James</h5>
+                                <p>Graphic Designer</p>
+                            </div>
+                        </div>
+                        <div class="testimonials__content">
+                            <h3>Testimonials</h3>
+                            <p>Dolore voluptate dolor magna anim culpa consectetur proident laborum duis exercitation
+                                anim aute.
+                            </p>
+                            <div class="testimonials__user">
+                                <h5>Elizabeth St.</h5>
+                                <p>CEO</p>
+                            </div>
+                        </div>
+                        <div class="testimonials__content">
+                            <h3>Testimonials</h3>
+                            <p>Voluptate ad minim ad sint ipsum ea elit exercitation non. laborum duis exercitation anim
+                                culpa consectetur proident.
+                            </p>
+                            <div class="testimonials__user">
+                                <h5>Tom Hanks</h5>
+                                <p>Actor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="video">
+            <div class="container">
+                <video src="./video/Swagger.mp4"></video>
+                <!-- <img src="./images/image-video.png" alt="background-video"> -->
+            </div>
+        </section>
+
+
+        <section class="recent-news">
+            <div class="container">
+                <div class="row">
+                    <div class="recent-news__heading">
+                        <h2>Recent News</h2>
+                        <p>Films can shape the destiny of talented youngsters Courses.</p>
+                        <div class="dot">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="recent-news__container">
+                            <div class="recent-news__img">
+                                <a href="#"><img src="./images/recent-news-01.png" alt="recent-news-01"></a>
+                                <span>21 JAN, 2018</span>
+                            </div>
+                            <div class="recent-news__introduction">
+                                <h4>Good Intentions or Good Results?</h4>
+                                <p>Lorem ipsum dolor sit amet, cons adipissom nas nibh dolor, m lorime ulilimes
+                                    nsectetur eli nas nibh dilimes nsectetur elit.</p>
+                                <p>Posted By: <span>James Smith</span></p>
+                                <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="recent-news__container">
+                            <div class="recent-news__img">
+                                <a href="#"><img src="./images/recent-news-02.png" alt="recent-news-01"></a>
+                                <span>21 JAN, 2018</span>
+                            </div>
+                            <div class="recent-news__introduction">
+                                <h4>Good Intentions or Good Results?</h4>
+                                <p>Lorem ipsum dolor sit amet, cons adipissom nas nibh dolor, m lorime ulilimes
+                                    nsectetur eli nas nibh dilimes
+                                    nsectetur elit.</p>
+                                <p>Posted By: <span>James Smith</span></p>
+                                <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="recent-news__container">
+                            <div class="recent-news__img">
+                                <a href="#"><img src="./images/recent-news-03.png" alt="recent-news-01"></a>
+                                <span>21 JAN, 2018</span>
+                            </div>
+                            <div class="recent-news__introduction">
+                                <h4>Good Intentions or Good Results?</h4>
+                                <p>Lorem ipsum dolor sit amet, cons adipissom nas nibh dolor, m lorime ulilimes
+                                    nsectetur eli nas nibh dilimes
+                                    nsectetur elit.</p>
+                                <p>Posted By: <span>James Smith</span></p>
+                                <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="btn btn-view-all">VIEW ALL BLOG</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="best-opportunity">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="best-opportunity__introduction">
+                            <h2>BEST <span>OPPORTUNITY</span> TO START A BUSINESS</h2>
+                            <p>voluptas sit aspernatur aut odit aut fugit, sed quias conseq magni dolores eos qui
+                                ratione
+                                volust luptatem sequi nesciu ptas sit aspernatur aut odit aut fugit, sed quias
+                                consequunt
+                                volust luptatem sequi nesciunt</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <ul class="best-opportunity__list">
+                            <li><span>&#8594;</span>&nbsp;&nbsp;&nbsp;Complex human endeavor ultimately</li>
+                            <li><span>&#8594;</span>&nbsp;&nbsp;&nbsp;A practical profession Requiring</li>
+                            <li><span>&#8594;</span>&nbsp;&nbsp;&nbsp;regardless of undergraduate specialization</li>
+                            <li><span>&#8594;</span>&nbsp;&nbsp;&nbsp;Best features of Australian education</li>
+                            <li><span>&#8594;</span>&nbsp;&nbsp;&nbsp;Flexible educational system</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img src="./images/best-opportunity-background.png" alt="best-opportunity">
+        </section>
+        <section class="fun-facts" id="fun">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="fun-facts__content">
+                            <h4 class="value">
+                                260
+                            </h4>
+                            <p>Upcoming Evenets</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="fun-facts__content">
+                            <h4 class="value">
+                                1260
+                            </h4>
+                            <p>Online Courses</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="fun-facts__content">
+                            <h4 class="value">
+                                180
+                            </h4>
+                            <p>Education Staff</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="fun-facts__content">
+                            <h4 class="value">
+                                1800
+                            </h4>
+                            <p>Complete Projects</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <img src="./images/fun-facts-background.png" alt="fun-background">
+        </section>
+
+        <section class="popular-courses">
+            <div class="container">
+                <div class="row">
+                    <div class="popular-courses__heading">
+                        <h2>Popular Courses</h2>
+                        <p>Films can shape the destiny of talented youngsters, Courses.</p>
+                        <div class="dot">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="popular-courses__container">
+                            <div class="popular-courses__img">
+                                <a href="#"><img src="./images/popular-courses-01.png" alt="recent-news-01"></a>
+                                <div class="popular-courses__number">
+                                    <p>Price: <span>$85</span></p>
+                                    <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
+                                    <p><i class="fa fa-commenting" aria-hidden="true"></i> 12</p>
+                                </div>
+                            </div>
+                            <div class="popular-courses__introduction">
+                                <h4>Design Instrument for Communication</h4>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="popular-courses__container">
+                            <div class="popular-courses__img">
+                                <a href="#"><img src="./images/popular-courses-02.png" alt="recent-news-02"></a>
+                                <div class="popular-courses__number">
+                                    <p>Price: <span>$85</span></p>
+                                    <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
+                                    <p><i class="fa fa-commenting" aria-hidden="true"></i> 12</p>
+                                </div>
+                            </div>
+                            <div class="popular-courses__introduction">
+                                <h4>Supreme Court Cases Related to Education</h4>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="popular-courses__container">
+                            <div class="popular-courses__img">
+                                <a href="#"><img src="./images/popular-courses-03.png" alt="recent-news-01"></a>
+                                <div class="popular-courses__number">
+                                    <p>Price: <span>$85</span></p>
+                                    <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
+                                    <p><i class="fa fa-commenting" aria-hidden="true"></i> 12</p>
+                                </div>
+                            </div>
+                            <div class="popular-courses__introduction">
+                                <h4>Educational tools to prepare Students</h4>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
+    <footer>
+        <section class="app-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="app-footer__about">
+                            <h4>About Information</h4>
+                            <p>Lorem ipsum dolor sit amet consetuer ilmi adipiscing elit diam, sed diam nonumy nibh
+                                euismod tincidunt</p>
+                            <ul class="app-footer__social--list">
+                                <li><a class="fa fa-facebook" href="#"></a></li>
+                                <li><a class="fa fa-twitter" href="#"></a></li>
+                                <li><a class="fa fa-google" href="#"></a></li>
+                                <li><a class="fa fa-vimeo" href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="app-footer__subscribe">
+                            <h4>Subscribe Newsletter</h4>
+                            <p>Subscribe Email and Get new Updates and Notification.</p>
+                            <form action="#">
+                                <input type="text" placeholder="Enter Your Email Address">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="app-footer__touch">
+                            <p><i class="fa fa-envelope"></i>User@domain.com</p>
+                            <p><i class="fa fa-phone" aria-hidden="true"></i>+2390-875-2235</p>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>503 Old Buffalo Street Northwest #205,
+                                New York-3087</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="./images/footer-01.png" alt="footer-01">
+                    </div>
+                    <div class="col">
+                        <img src="./images/footer-02.png" alt="footer-02">
+                    </div>
+                    <div class="col">
+                        <img src="./images/footer-03.png" alt="footer-03">
+                    </div>
+                    <div class="col">
+                        <img src="./images/footer-04.png" alt="footer-04">
+                    </div>
+                    <div class="col">
+                        <img src="./images/footer-05.png" alt="footer-05">
+                    </div>
+                    <div class="col">
+                        <img src="./images/footer-06.png" alt="footer-06">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <p><span>Logo - </span>Copyright 2018. Design by <span>Themextic</span></p>
+            </div>
+            <img src="./images/footer-background.png" alt="footer">
+        </section>
+    </footer>
     <script>
+
         // Set the date we're counting down to
         var countDownDate = new Date("May 23, 2021 00:00:00").getTime();
 
@@ -286,13 +654,30 @@
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Output the result in an element with id="demo"
-            document.getElementById("day").innerHTML = days;
-            document.getElementById("hour").innerHTML = hours;
-            document.getElementById("min").innerHTML = minutes;
-            document.getElementById("sec").innerHTML = seconds;
-            console.log(days + "d " + hours + "h "
-                + minutes + "m " + seconds + "s ")
-            // If the count down is over, write some text 
+            if (seconds < 10) {
+                document.getElementById("sec").innerHTML = "0" + seconds;
+            }
+            else {
+                document.getElementById("sec").innerHTML = seconds;
+            }
+            if (hours < 10) {
+                document.getElementById("hour").innerHTML = "0" + hours;
+            }
+            else {
+                document.getElementById("hour").innerHTML = hours;
+            }
+            if (days < 10) {
+                document.getElementById("day").innerHTML = "0" + days;
+            }
+            else {
+                document.getElementById("day").innerHTML = days;
+            }
+            if (minutes < 10) {
+                document.getElementById("min").innerHTML = "0" + minutes;
+            }
+            else {
+                document.getElementById("min").innerHTML = minutes;
+            }
             if (distance < 0) {
                 document.getElementById("day").innerHTML = "00";
                 document.getElementById("hour").innerHTML = "00";
@@ -300,6 +685,58 @@
                 document.getElementById("sec").innerHTML = "00";
             }
         }, 1000);
+
+
+        // Slider Testimonials
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var content = document.getElementsByClassName("testimonials__content");
+            // var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                content[i].style.display = "none"
+            }
+            slides[slideIndex - 1].style.display = "block";
+            content[slideIndex - 1].style.display = "block";
+            // dots[slideIndex - 1].className += " active";
+        }
+
+
+
+        //  Scroll
+        // var section = document.querySelector('.numbers');
+        var section = document.getElementById("fun");
+        var hasEntered = false;
+
+        window.addEventListener('scroll', (e) => {
+            var shouldAnimate = (window.scrollY + window.innerHeight) >= section.offsetTop;
+
+            if (shouldAnimate && !hasEntered) {
+                hasEntered = true;
+
+                $('.value').each(function () {
+                    $(this).prop('Counter', 0).animate({
+                        Counter: $(this).text()
+                    }, {
+                        duration: 4000,
+                        easing: 'swing',
+                        step: function (now) {
+                            $(this).text(Math.ceil(now));
+                        }
+                    });
+                });
+
+            }
+        });
     </script>
 </body>
 
