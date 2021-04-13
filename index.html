@@ -344,10 +344,22 @@
             </div>
         </section>
 
+
         <section class="video">
             <div class="container">
-                <video src="./video/Swagger.mp4"></video>
-                <!-- <img src="./images/image-video.png" alt="background-video"> -->
+                <!--  -->
+                <div id="light">
+                    <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                    <video id="VisaChipCardVideo" width="100%" controls>
+                        <source src="./video/Swagger.mp4" type="video/mp4">
+                        <!--Browser does not support <video> tag -->
+                    </video>
+                </div>
+                <div id="fade" onClick="lightbox_close();"></div>
+                <!--  -->
+                <img src="./images/video-backround.png" alt="background-video">
+                <h3>Best Online Teaching and Assistant Courses</h3>
+                <img src="./images/video-icon.png" alt="icon-video" onclick="lightbox_open();">
             </div>
         </section>
 
@@ -745,6 +757,32 @@
 
             }
         });
+
+
+        //video 
+        window.document.onkeydown = function (e) {
+            if (!e) {
+                e = event;
+            }
+            if (e.keyCode == 27) {
+                lightbox_close();
+            }
+        }
+
+        function lightbox_open() {
+            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+            // window.scrollTo(0, 0);
+            document.getElementById('light').style.display = 'block';
+            document.getElementById('fade').style.display = 'block';
+            lightBoxVideo.play();
+        }
+
+        function lightbox_close() {
+            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+            document.getElementById('light').style.display = 'none';
+            document.getElementById('fade').style.display = 'none';
+            lightBoxVideo.pause();
+        }
     </script>
 </body>
 
