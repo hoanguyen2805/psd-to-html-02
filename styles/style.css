@@ -598,65 +598,6 @@ body {
 }
 /* END BEST-COACHING */
 
-/* START RECENT-COURSES */
-.recent-courses {
-  padding-top: 20rem;
-}
-.recent-courses__heading {
-  margin: 0 auto;
-  text-align: center;
-}
-.recent-courses__heading h2 {
-  color: #2c2c2c;
-  font-size: 4rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-}
-.recent-courses__heading p {
-  color: #888888;
-  font-size: 1.4rem;
-}
-.recent-courses__menu {
-  display: flex;
-}
-.recent-courses__menu {
-  display: flex;
-}
-.btn-menu {
-  border: none;
-  outline: none;
-  background: none;
-  color: #2c2c2c;
-  font-size: 1.4rem;
-  font-family: "Poppins", sans-serif;
-  padding: 1.3rem 2.8rem;
-}
-.active {
-  background-color: #29d197;
-  color: #ffffff;
-  border-radius: 4rem;
-}
-
-.recent-courses .row:nth-of-type(2) {
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 4rem -10px;
-  /* flex-direction: column; */
-  /* align-items: baseline; */
-}
-.recent-courses .row:nth-of-type(2) .col {
-  width: calc(33.333% - 20px);
-  height: 30rem;
-  margin: 0 10px;
-  background-color: red;
-  margin-bottom: 2rem;
-}
-.recent-courses .row:nth-of-type(2) .col:hover {
-  height: 25rem;
-}
-
-/* END RECENT-COURSES */
-
 /* START SUBSCRIBE-TESTIMONIALS */
 .subscribe-testimonials .row {
   padding-left: 26rem;
@@ -845,7 +786,7 @@ body {
   position: relative;
 }
 
-.video img:first-of-type {
+.video .container img:first-of-type {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -863,14 +804,14 @@ body {
   font-size: 3.2rem;
   width: 45rem;
 }
-.video img:last-of-type {
+.video .container img:last-of-type {
   position: absolute;
   top: 26%;
   width: 9.5rem;
   cursor: pointer;
 }
 .video h3,
-.video img:last-of-type {
+.video .container img:last-of-type {
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -902,7 +843,7 @@ body {
   /* max-height: 360px; */
   /* margin-left: -300px; */
   /* margin-top: -180px; */
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   background: #fff;
   z-index: 1002;
   overflow: visible;
@@ -933,6 +874,15 @@ body {
   display: none;
 }
 
+.video > img {
+  position: absolute;
+  width: 26%;
+  height: auto;
+  /* object-fit: cover; */
+  bottom: 60%;
+  right: 0;
+  z-index: -1;
+}
 /* END VIDEO */
 
 /* START RECENT-NEWS */
@@ -964,7 +914,7 @@ body {
 }
 .dot div {
   position: relative;
-  width: 20%;
+  width: 7rem;
   height: 4rem;
   border-bottom: 1px dashed #cbcbcb;
 }
@@ -1434,3 +1384,158 @@ body {
   cursor: pointer;
 }
 /* END FOOTER */
+
+/* START RECENT-COURSES */
+.recent-courses {
+  padding-top: 20rem;
+}
+.recent-courses__heading {
+  margin: 0 auto;
+  text-align: center;
+}
+.recent-courses__heading h2 {
+  color: #2c2c2c;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.recent-courses__heading p {
+  color: #888888;
+  font-size: 1.4rem;
+}
+.recent-courses__menu--filter {
+  display: flex;
+  margin-top: 2.5rem;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.recent-courses__menu--filter button{
+  height: 4rem;
+}
+.recent-courses__menu--filter button:not(:last-of-type) {
+  margin-right: 5px;
+}
+.recent-courses__menu--filter button:first-of-type, .recent-courses__menu--filter button:nth-of-type(4){
+  width: 18rem;
+}
+.recent-courses__menu--filter button:nth-of-type(2){
+  width: 8rem;
+}
+.recent-courses__menu--filter button:nth-of-type(3){
+  width: 11rem;
+}
+.recent-courses__menu--filter button:last-of-type{
+  width: 8rem;
+}
+.btn-menu:hover:not(.active) {
+  background: none;
+  border: 2px solid #e3e3e3;
+  border-radius: 4rem;
+}
+
+.btn-menu {
+  border: none;
+  outline: none;
+  background: none;
+  color: #2c2c2c;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  /* padding: 1.3rem 2.8rem; */
+}
+.active {
+  background-color: #29d197;
+  color: #ffffff;
+  border-radius: 4rem;
+  padding: 0.8rem 2.8rem;
+}
+
+.recent-courses .row:nth-of-type(2) {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 4rem -10px;
+}
+
+.recent-courses .row:nth-of-type(2) .col {
+  width: calc(33.333% - 20px);
+  margin: 0 10px;
+  margin-bottom: 5rem;
+}
+
+.popular-courses__img {
+  position: relative;
+}
+
+.popular-courses__number {
+  display: flex;
+  width: 85%;
+  background-color: white;
+  position: absolute;
+  bottom: -2.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 5rem;
+  border-radius: 4rem;
+  align-items: stretch;
+  z-index: 2;
+}
+.popular-courses__number p {
+  color: #2b2b2b;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 5rem;
+}
+.popular-courses__number p:first-of-type {
+  width: 40%;
+  border-right: 1px solid #ebebeb;
+}
+.popular-courses__number p:nth-of-type(2) {
+  width: 30%;
+  height: 100%;
+  border-right: 1px solid #ebebeb;
+}
+.popular-courses__number p:last-of-type {
+  width: 30%;
+  height: 100%;
+}
+.popular-courses__number span {
+  font-weight: bold;
+  color: #29d197;
+}
+.popular-courses__number i {
+  color: #e6e6e6;
+}
+
+.popular-courses__introduction {
+  padding: 5.5rem 4rem 4rem 4rem;
+  position: relative;
+  background-color: white;
+}
+.popular-courses__introduction h4 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333333;
+}
+.popular-courses__introduction::after {
+  content: "\2192";
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+  text-align: center;
+  width: 4rem;
+  height: 3rem;
+  border: 2px solid #f0f0f0;
+  position: absolute;
+  bottom: -2rem;
+  color: #353535;
+  background-color: white;
+  cursor: pointer;
+}
+
+.show {
+  display: block !important;
+}
+.filterDiv {
+  display: none;
+}
+/* END RECENT-COURSES */

@@ -258,25 +258,155 @@
                         <p>
                             Films can shape the destiny of talented youngsters Courses.
                         </p>
-                        <ul class="recent-courses__menu">
-                            <li><button class="btn btn-menu">All Categories</button></li>
-                            <li><button class="btn btn-menu">Art</button></li>
-                            <li><button class="btn btn-menu active">Exercise</button></li>
-                            <li><button class="btn btn-menu">Material Design</button></li>
-                            <li><button class="btn btn-menu">Music</button></li>
-                        </ul>
+                        <div class="dot">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="recent-courses__menu--filter" id="myBtnContainer">
+                            <button class="btn btn-menu active" onclick="filterSelection('all')">All Categories</button>
+                            <button class="btn btn-menu" onclick="filterSelection('art')">Art</button>
+                            <button class="btn btn-menu giua" onclick="filterSelection('exercise')">Exercise</button>
+                            <button class="btn btn-menu" onclick="filterSelection('design')">Material Design</button>
+                            <button class="btn btn-menu" onclick="filterSelection('music')">Music</button>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">1</div>
-                    <div class="col">2</div>
-                    <div class="col">3</div>
-                    <div class="col">4</div>
-                    <div class="col">5</div>
-                    <div class="col">6</div>
+                    <div class="col filterDiv design exercise art">
+                        <div class="popular-courses__container">
+                            <div class="popular-courses__img">
+                                <a href="#"><img src="./images/recent-courses-01.png" alt="recent-news-01"></a>
+                                <div class="popular-courses__number">
+                                    <p>Price: <span>$85</span></p>
+                                    <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
+                                    <p><i class="fa fa-commenting" aria-hidden="true"></i> 12</p>
+                                </div>
+                            </div>
+                            <div class="popular-courses__introduction">
+                                <h4>Design Instrument for Communication</h4>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col filterDiv exercise">
+                        <div class="popular-courses__container">
+                            <div class="popular-courses__img">
+                                <a href="#"><img src="./images/recent-courses-02.png" alt="recent-news-01"></a>
+                                <div class="popular-courses__number">
+                                    <p>Price: <span>$85</span></p>
+                                    <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
+                                    <p><i class="fa fa-commenting" aria-hidden="true"></i> 12</p>
+                                </div>
+                            </div>
+                            <div class="popular-courses__introduction">
+                                <h4>Decision explained that the separate</h4>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col filterDiv exercise music">
+                        <div class="popular-courses__container">
+                            <div class="popular-courses__img">
+                                <a href="#"><img src="./images/recent-courses-03.png" alt="recent-news-01"></a>
+                                <div class="popular-courses__number">
+                                    <p>Price: <span>$85</span></p>
+                                    <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
+                                    <p><i class="fa fa-commenting" aria-hidden="true"></i> 12</p>
+                                </div>
+                            </div>
+                            <div class="popular-courses__introduction">
+                                <h4>Technology to create Immersive Teaching</h4>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col filterDiv exercise music">
+                        <div class="popular-courses__container">
+                            <div class="popular-courses__img">
+                                <a href="#"><img src="./images/recent-courses-04.png" alt="recent-news-01"></a>
+                                <div class="popular-courses__number">
+                                    <p>Price: <span>$85</span></p>
+                                    <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
+                                    <p><i class="fa fa-commenting" aria-hidden="true"></i> 12</p>
+                                </div>
+                            </div>
+                            <div class="popular-courses__introduction">
+                                <h4>Wild Rose School Division Adopted</h4>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col filterDiv design art music">
+                        <div class="popular-courses__container">
+                            <div class="popular-courses__img">
+                                <a href="#"><img src="./images/recent-courses-05.png" alt="recent-news-01"></a>
+                                <div class="popular-courses__number">
+                                    <p>Price: <span>$85</span></p>
+                                    <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
+                                    <p><i class="fa fa-commenting" aria-hidden="true"></i> 12</p>
+                                </div>
+                            </div>
+                            <div class="popular-courses__introduction">
+                                <h4>The Rights of students or Faculty within School</h4>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col filterDiv exercise art">
+                        <div class="popular-courses__container">
+                            <div class="popular-courses__img">
+                                <a href="#"><img src="./images/recent-courses-06.png" alt="recent-news-01"></a>
+                                <div class="popular-courses__number">
+                                    <p>Price: <span>$85</span></p>
+                                    <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
+                                    <p><i class="fa fa-commenting" aria-hidden="true"></i> 12</p>
+                                </div>
+                            </div>
+                            <div class="popular-courses__introduction">
+                                <h4>Sickening about a case the Supreme</h4>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
-                    <button>
+                    <button class="btn btn-view-all">
                         VIEW ALL BLOG
                     </button>
                 </div>
@@ -360,7 +490,10 @@
                 <img src="./images/video-backround.png" alt="background-video">
                 <h3>Best Online Teaching and Assistant Courses</h3>
                 <img src="./images/video-icon.png" alt="icon-video" onclick="lightbox_open();">
+
+
             </div>
+            <img src="./images/man.png" alt="man">
         </section>
 
 
@@ -783,7 +916,13 @@
             document.getElementById('fade').style.display = 'none';
             lightBoxVideo.pause();
         }
+    
+    
+    
+    
+    
     </script>
+    <script src="./js/filter-menu.js"></script>
 </body>
 
 </html>
