@@ -81,7 +81,9 @@
     <main>
         <section class="slider">
             <div class="slider__container">
-                <img src="./images/slider-background.png" alt="slider">
+                <img src="./images/slider-background-01.png" alt="slider-01" class="slider-x">
+                <!-- <img src="./images/slider-background-02.png" alt="slider-02" class="slider-x"> -->
+                <!-- <img src="./images/slider-background-03.png" alt="slider-03" class="slider-x"> -->
                 <div class="container">
                     <div class="row">
                         <div class="col">
@@ -300,7 +302,7 @@
                     <div class="col filterDiv exercise">
                         <div class="recent-courses__container">
                             <div class="recent-courses__img">
-                                <a href="#"><img src="./images/recent-courses-02.png" alt="recent-news-01"></a>
+                                <a href="#"><img src="./images/recent-courses-03.png" alt="recent-news-01"></a>
                                 <div class="recent-courses__number">
                                     <p>Price: <span>$85</span></p>
                                     <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
@@ -372,7 +374,7 @@
                     <div class="col filterDiv design art music">
                         <div class="recent-courses__container">
                             <div class="recent-courses__img">
-                                <a href="#"><img src="./images/recent-courses-05.png" alt="recent-news-01"></a>
+                                <a href="#"><img src="./images/recent-courses-06.png" alt="recent-news-01"></a>
                                 <div class="recent-courses__number">
                                     <p>Price: <span>$85</span></p>
                                     <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
@@ -938,7 +940,21 @@
 
 
 
+// Slider header
+        var index = 0;
+        hien();
+        function hien(){
+            var i;
+            var slides = document.getElementsByClassName("slider-x");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            index++;
+            if (index > slides.length) { index = 1 }
 
+            slides[index - 1].style.display = "block";
+            setTimeout(hien, 3000); // Change image every 2 seconds
+        }
 
     </script>
     <script src="./js/filter-menu.js"></script>
