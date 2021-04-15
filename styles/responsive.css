@@ -1,0 +1,309 @@
+@media only screen and (max-width: 1500px) {
+  .container {
+    width: 66.66%;
+  }
+  .best-coaching__countdown--time li {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  .btn-prev {
+    top: 18%;
+  }
+  .btn-next {
+    bottom: 18%;
+  }
+  .subscribe-testimonials .row {
+    padding-left: 18rem;
+    padding-right: 18rem;
+  }
+  .subscribe__content {
+    padding-right: 5rem;
+  }
+  .video > img {
+    width: 24%;
+  }
+  .best-coaching__text h2 {
+    font-size: 3.4rem;
+  }
+  .activities .row {
+    padding-left: 17rem;
+    padding-right: 17rem;
+  }
+  .slider h1 {
+    font-size: 4.4rem;
+  }
+  .top-bar .row:last-of-type {
+    padding-left: 17rem;
+    padding-right: 17rem;
+  }
+  .top-bar .row {
+    padding-left: 17rem;
+    padding-right: 17rem;
+  }
+  .top-bar .row:last-of-type .col:first-of-type {
+    margin-right: 6rem;
+  }
+  .top-bar__menu--list li:not(:last-of-type) {
+    margin-right: 2.5rem;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .container {
+    width: 72%;
+  }
+  .app-footer .container:first-of-type {
+    top: 13%;
+  }
+  .app-footer .container:nth-of-type(2) {
+    bottom: 13%;
+  }
+  .subscribe-testimonials .row {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+  .subscribe__content {
+    padding-right: 4rem;
+  }
+  .activities .row {
+    padding-left: 14rem;
+    padding-right: 14rem;
+  }
+  .top-bar .row {
+    padding-left: 14rem;
+    padding-right: 14rem;
+  }
+  .top-bar .row:last-of-type {
+    padding-left: 14rem;
+    padding-right: 14rem;
+  }
+  .top-bar .row:last-of-type .col:first-of-type {
+    margin-right: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 85%;
+  }
+  .app-footer .container-fluid p {
+    margin-top: 4.5rem;
+  }
+  .app-footer .container:nth-of-type(2) img {
+    width: 9rem;
+  }
+  .app-footer .container:first-of-type {
+    top: 7%;
+  }
+  .app-footer__about h4,
+  .app-footer__subscribe h4,
+  .app-footer__touch h4 {
+    font-size: 1.6rem;
+  }
+  .app-footer__about p,
+  .app-footer__subscribe p,
+  .app-footer__touch p {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    line-height: 1.7rem;
+  }
+  .app-footer__social--list {
+    margin-top: 1.5rem;
+  }
+  .app-footer__subscribe form {
+    margin-top: 1.5rem;
+  }
+  .cha {
+    margin-top: 1rem;
+  }
+  .cha:not(:first-of-type) {
+    margin-top: 0px;
+  }
+  .recent-news__heading h2,
+  .popular-courses__heading h2 {
+    font-size: 3.6rem;
+  }
+  .recent-news__heading p,
+  .popular-courses__heading p {
+    font-size: 1.3rem;
+  }
+  .fun-facts__content h4 {
+    font-size: 3.4rem;
+  }
+  .best-opportunity__introduction {
+    padding-right: 4rem;
+  }
+  .best-opportunity__introduction h2 {
+    font-size: 3rem;
+  }
+  .best-opportunity__introduction p {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+  }
+  .best-opportunity__list li {
+    font-size: 1.3rem;
+  }
+  .best-opportunity__list li {
+    margin-bottom: 1.5rem;
+  }
+  .recent-news .row:last-of-type {
+    margin-top: 5rem;
+    margin-bottom: 6.5rem;
+  }
+  .popular-courses__introduction h4 {
+    font-size: 1.5rem;
+  }
+  .popular-courses__number p {
+    font-size: 1.3rem;
+  }
+  .recent-news__introduction h4 {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+  .recent-news__introduction p:first-of-type {
+    font-size: 1.3rem;
+  }
+  .recent-news__introduction a {
+    font-size: 1.1rem;
+  }
+  .video h3 {
+    font-size: 3.3rem;
+  }
+  .subscribe-testimonials .row {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .subscribe__content {
+    padding-right: 3rem;
+  }
+  .subscribe__content h3 {
+    font-size: 2.2rem;
+  }
+  .subscribe__content p {
+    font-size: 1.4rem;
+  }
+  .subscribe__content input {
+    margin-top: 2rem;
+    height: 5rem;
+  }
+  .btn-subscribe {
+    font-size: 1.3rem;
+  }
+  .testimonials__content h3 {
+    font-size: 2.2rem;
+  }
+  .testimonials__content > p {
+    font-size: 1.4rem;
+    width: 30rem;
+  }
+  .btn-prev {
+    top: 11%;
+  }
+  .btn-next {
+    bottom: 11%;
+  }
+  .testimonials__user h5 {
+    font-size: 1.5rem;
+  }
+  .video {
+    margin-top: 5rem;
+  }
+  .video > img {
+    bottom: 50%;
+  }
+  .subscribe-testimonials .row {
+    padding-top: 6rem;
+  }
+  .recent-courses__introduction h4 {
+    font-size: 1.5rem;
+  }
+  .recent-courses__number p {
+    font-size: 1.3rem;
+  }
+  .recent-courses__heading h2 {
+    font-size: 3.6rem;
+  }
+  .recent-courses__heading p {
+    font-size: 1.3rem;
+  }
+  .best-coaching__text h2 {
+    margin-top: 2rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .best-coaching__form {
+    width: 80%;
+    padding: 3.5rem 1.5rem;
+  }
+  .btn-sign-up {
+    margin-bottom: 2rem;
+  }
+  .best-coaching__countdown--time li span {
+    font-size: 2rem;
+  }
+  .meet-friends {
+    padding-top: 20rem;
+  }
+  .meet-friends__heading h2 {
+    font-size: 3.2rem;
+  }
+  .meet-friends__text h4 {
+    font-size: 1.6rem;
+  }
+  .meet-friends__text p {
+    margin-top: 1rem;
+  }
+  .meet-friends__img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .meet-friends__img img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .activities .row {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+  .top-bar .row:last-of-type {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+  .top-bar .row {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+  .activities {
+    bottom: -30%;
+  }
+  .slider h1 {
+    font-size: 3.6rem;
+    line-height: 4rem;
+  }
+  .slider .container .row:first-of-type .col:last-of-type {
+    margin-top: 2rem;
+  }
+  .top-bar__menu--list a{
+      font-size: 1.2rem;
+  }
+  .top-bar .row:last-of-type .col:first-of-type a{
+      font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+    /* 769px - 992px */
+  /* .container {
+    width: 85%;
+  } */
+}
+@media only screen and (max-width: 768px) {
+    /* 481px - 768px */
+    /* .container {
+    width: 85%;
+  } */
+}
+@media only screen and (max-width: 480px) {
+    /* <= 480px */
+    /* .container {
+    width: 85%;
+  } */
+}

@@ -307,7 +307,7 @@ body {
   text-align: center;
   margin: 2rem auto;
 }
-.activities .col:nth-of-type(3) p{
+.activities .col:nth-of-type(3) p {
   color: #ffffff;
 }
 .activities .col:first-of-type,
@@ -572,7 +572,7 @@ body {
   background: #1a265c;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
-  padding: 1.5rem 3.2rem;
+  padding: 1.4rem 3.5rem;
   outline: none;
   border: none;
   border-radius: 4rem;
@@ -580,7 +580,7 @@ body {
   display: block;
   margin-bottom: 3rem;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .best-coaching__countdown--time {
   display: flex;
@@ -1052,7 +1052,7 @@ video {
 .best-opportunity .col {
   width: 50%;
 }
-.best-opportunity__introduction{
+.best-opportunity__introduction {
   padding-right: 7rem;
 }
 .best-opportunity__introduction h2 {
@@ -1149,7 +1149,7 @@ video {
   background-color: white;
 }
 .popular-courses__introduction h4 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
   color: #333333;
 }
@@ -1385,9 +1385,7 @@ video {
 .recent-courses {
   padding-top: 20rem;
 }
-.recent-courses .row:first-of-type{
-  position: relative;
-  z-index: 10;
+.recent-courses .row:first-of-type {
   background-color: white;
   padding-bottom: 4rem;
 }
@@ -1526,7 +1524,7 @@ video {
   background-color: white;
 }
 .recent-courses__introduction h4 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 1000;
   color: #333333;
 }
@@ -1541,23 +1539,39 @@ video {
   border: 2px solid #f0f0f0;
   text-align: center;
   border-radius: 5px;
-  font-size: 15px;
-}
-.btn-arrow img {
-  width: 1.4rem;
-  margin: 0 auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
 }
 
-
-
-.recent-courses__container:hover{
-  position: relative;
-  bottom: 4rem;
-  z-index: 1;
-  height: 385px;
+.recent-courses__container:hover .btn-arrow {
+  background-color: #29d197;
+  color: #ffffff;
+  width: 15rem;
+  height: 4rem;
+  border-radius: 4rem;
 }
-.recent-courses__container:hover .recent-courses__img img{
+.recent-courses__container:hover .btn-arrow span {
+  display: inline-block;
+}
+.btn-arrow span {
+  display: none;
+}
+/* .btn-arrow:hover::after {
+  border-radius: 4rem;
+  content: "More Details";
+} */
+.recent-courses__container:hover {
+  /* position: relative; */
+  /* bottom: 4rem; */
+  /* z-index: 1; */
+  /* height: 385px; */
+}
+.recent-courses__container:hover .recent-courses__img img {
   filter: grayscale(60%);
+  height: 21.5rem;
+  width: 100%;
+  object-fit: cover;
 }
 /* END ------------ */
 /* END RECENT-COURSES */
