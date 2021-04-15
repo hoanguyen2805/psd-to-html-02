@@ -81,7 +81,7 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199.98px) {
   .container {
     width: 85%;
   }
@@ -282,29 +282,238 @@
   .slider .container .row:first-of-type .col:last-of-type {
     margin-top: 2rem;
   }
-  .top-bar__menu--list a{
-      font-size: 1.2rem;
+  .top-bar__menu--list a {
+    font-size: 1.2rem;
   }
-  .top-bar .row:last-of-type .col:first-of-type a{
-      font-size: 3rem;
+  .top-bar .row:last-of-type .col:first-of-type a {
+    font-size: 3rem;
   }
 }
-@media only screen and (max-width: 992px) {
-    /* 769px - 992px */
+@media only screen and (max-width: 991.98px) {
+  /* 769px - 992px */
   .container {
     width: 90%;
   }
+  /* start footer */
+  .app-footer > img {
+    height: 35rem;
+    object-fit: cover;
+  }
+  .app-footer .container-fluid {
+    height: 25%;
+  }
+  .app-footer .container:nth-of-type(2) {
+    bottom: 17%;
+  }
+  .app-footer__subscribe input {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+  }
+  .app-footer__subscribe button {
+    right: 3%;
+  }
+  /* end footer */
+  .popular-courses .row:last-of-type {
+    justify-content: flex-start;
+  }
+  .popular-courses .row:last-of-type .col {
+    width: calc(50% - 2rem);
+    margin-bottom: 2rem;
+  }
+  .fun-facts img {
+    height: 12rem;
+    width: 100%;
+  }
+  .fun-facts__content {
+    padding-left: 2rem;
+  }
+  .best-opportunity > img {
+    height: 30rem;
+    object-fit: cover;
+  }
+  .best-opportunity__introduction h2 {
+    font-size: 2.8rem;
+  }
+  .recent-news .row:nth-of-type(2) {
+    justify-content: flex-start;
+  }
+  .recent-news .row:nth-of-type(2) .col {
+    width: calc(50% - 2rem);
+    margin-bottom: 2rem;
+  }
+  .recent-news .row:last-of-type {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+  .popular-courses {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+  }
+  .video > img{
+    display: none;
+  }
+  .best-coaching > img{
+    height: 20rem;
+    object-fit: cover;
+  }
+  .best-coaching__form{
+    top: 10%;
+  }
+  .recent-courses{
+    padding-top: 24rem;
+  }
+  .best-coaching__text h2{
+    font-size: 2.6rem;
+  }
+  .best-coaching__countdown--time li{
+    width: 5rem;
+    height: 5rem;
+  }
+  .best-coaching__countdown--time li span{
+    font-size: 1.6rem;
+  }
+  .meet-friends > .container > .row:last-of-type{
+    flex-direction: column;
+    align-items: center;
+  }
+  .meet-friends > .container > .row:last-of-type > .col{
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .meet-friends__container > .col{
+    justify-content: center;
+  }
+  .meet-friends .row:last-of-type > .col:last-of-type > .meet-friends__container .col{
+    justify-content: center;
+  }
+  .subscribe-testimonials .row{
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe-testimonials .col{
+    width: 60%;
+  }
+  .subscribe-testimonials .col:first-of-type{
+    border-right: none;
+  }
+  .subscribe-testimonials .col:first-of-type{
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .subscribe__content{
+    padding-right: 0;
+  }
+  .subscribe-testimonials .col:last-of-type{
+    justify-content: center;
+  }
+  .btn-prev{
+    top: 3%;
+  }
+  .btn-next{
+    bottom: 3%;
+  }
+  .best-coaching__countdown--time li{
+    font-size: 1.1rem;
+  }
+  .recent-courses .row:nth-of-type(2) .col{
+    width: calc(50% - 2rem);
+  }
+  .testimonials__content > p{
+    width: auto;
+  }
+  .recent-courses .row:nth-of-type(2){
+    margin-bottom: 0;
+  }
+  .testimonials__slider img:not(:last-of-type){
+    width: 11rem;
+    height: 11rem;
+  }
+  .popular-courses__img img{
+    width: 100%;
+  }
+  .recent-news__img img{
+    width: 100%;
+  }
+  .recent-courses__img img{
+    width: 100%;
+  }
+  .best-coaching > img{
+    width: 100%;
+  }
+  .activities{
+    bottom: -24%;
+  }
+  .slider .container{
+    bottom: 33%;
+  }
+  .slider h1{
+    font-size: 3rem;
+  }
+  .btn-more, .btn-start{
+    padding: 1.3rem 3rem;
+  }
+  .activities__content img{
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem auto 1rem auto;
+  }
+  .activities__content p{
+    font-size: 1.4rem;
+    width: auto;
+    /* max-width: 16.5rem; */
+  }
+
+  .top-bar{
+    position: relative;
+    background-color: #1c2f4d;
+  }
+  .top-bar .row:first-of-type{
+    margin-top: 0rem;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+  }
+  .top-bar .row:first-of-type .col:first-of-type{
+    display: none;
+  }
+
+  .top-bar .row:last-of-type .col:last-of-type{
+    position: absolute;
+    top: -7.8rem;
+    right: 4rem;
+  }
+  .btn-login{
+    padding: 1.3rem 3rem;
+    background: none;
+    border-color: #ffffff;
+    color: #d7bd73;
+  }
+   .btn-login:hover{
+     background: #273956;
+   }
+  .top-bar__social p{
+    display: none;
+  }
+  .top-bar .row:last-of-type{
+    position: absolute;
+    bottom: -5rem;
+    left: 0;
+    right: 0;
+  }
+  .top-bar__social--list a{
+    background-color: #273956;
+  }
   
 }
-@media only screen and (max-width: 768px) {
-    /* 481px - 768px */
-    /* .container {
+@media only screen and (max-width: 767.98px) {
+  /* 481px - 768px */
+  /* .container {
     width: 85%;
   } */
 }
-@media only screen and (max-width: 480px) {
-    /* <= 480px */
-    /* .container {
+@media only screen and (max-width: 575.98px) {
+  /* <= 480px */
+  /* .container {
     width: 85%;
   } */
 }

@@ -153,7 +153,7 @@ body {
   font-size: 1.3rem;
   font-weight: bold;
 }
-.btn-login {
+/* .btn-login {
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
@@ -162,7 +162,7 @@ body {
   padding: 1.5rem 3.5rem;
   border-radius: 5rem;
   font-family: "Poppins", sans-serif;
-}
+} */
 /* END TOP-BAR */
 
 /* START SLIDER */
@@ -200,7 +200,7 @@ body {
   margin-top: 2.7rem;
 }
 .btn-more,
-.btn-start {
+.btn-start, .btn-login {
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
@@ -214,7 +214,7 @@ body {
   margin-right: 5px;
 }
 .btn-more:hover,
-.btn-start:hover {
+.btn-start:hover, .btn-login:hover {
   background-color: #29d197;
 }
 .slider__container {
@@ -1559,12 +1559,12 @@ video {
   border-radius: 4rem;
   content: "More Details";
 } */
-.recent-courses__container:hover {
+/* .recent-courses__container:hover { */
   /* position: relative; */
   /* bottom: 4rem; */
   /* z-index: 1; */
   /* height: 385px; */
-}
+
 .recent-courses__container:hover .recent-courses__img img {
   filter: grayscale(60%);
   height: 21.5rem;
