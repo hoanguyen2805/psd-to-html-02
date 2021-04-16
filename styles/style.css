@@ -1538,6 +1538,24 @@ video {
   font-family: "Poppins", sans-serif;
 }
 
+
+.btn-arrow span {
+  display: none;
+}
+
+.nut{
+  display: none;
+}
+
+
+
+
+.recent-courses__container:hover .recent-courses__img img {
+  filter: grayscale(60%);
+  height: 21.5rem;
+  width: 100%;
+  object-fit: cover;
+}
 .recent-courses__container:hover .btn-arrow {
   background-color: #29d197;
   color: #ffffff;
@@ -1548,28 +1566,21 @@ video {
 .recent-courses__container:hover .btn-arrow span {
   display: inline-block;
 }
-.btn-arrow span {
-  display: none;
-}
-/* .btn-arrow:hover::after {
-  border-radius: 4rem;
-  content: "More Details";
-} */
-/* .recent-courses__container:hover { */
-  /* position: relative; */
-  /* bottom: 4rem; */
-  /* z-index: 1; */
-  /* height: 385px; */
 
-.recent-courses__container:hover .recent-courses__img img {
+
+.popular-courses__container:hover .popular-courses__img img {
   filter: grayscale(60%);
-  height: 21.5rem;
+  height: 18rem;
   width: 100%;
   object-fit: cover;
 }
-
-/* END ------------ */
-/* END RECENT-COURSES */
-.nut{
-  display: none;
+.popular-courses__container:hover .btn-arrow {
+  background-color: #29d197;
+  color: #ffffff;
+  width: 15rem;
+  height: 4rem;
+  border-radius: 4rem;
+}
+.popular-courses__container:hover .btn-arrow span {
+  display: inline-block;
 }

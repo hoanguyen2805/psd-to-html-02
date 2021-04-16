@@ -290,6 +290,16 @@
   }
 }
 @media only screen and (max-width: 991.98px) {
+
+  .popular-courses__container:hover .popular-courses__img img {
+  filter: grayscale(60%);
+  height: 24rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
   /* 769px - 992px */
   .container {
     width: 90%;
