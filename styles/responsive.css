@@ -513,16 +513,9 @@
   .container {
     width: 95%;
   }
-
-  /* .top-bar .row:last-of-type{
-    margin-top: 0rem;
+  .popular-courses .row:last-of-type .col {
+    margin-bottom: 4rem;
   }
-  .top-bar .row:last-of-type{
-    display: none;
-  }
-  .top-bar .row:first-of-type{
-    justify-content: flex-end;
-  } */
   .top-bar .row:last-of-type {
     position: relative;
     bottom: 0;
@@ -560,7 +553,7 @@
   .nut {
     display: inline-block;
     position: absolute;
-    top: 7px;
+    top: 8px;
     right: 2rem;
     width: 4.5rem;
     height: 3.4rem;
@@ -575,8 +568,8 @@
     outline: none;
     cursor: pointer;
   }
-  .slider .container{
-    bottom: 38%;  
+  .slider .container {
+    bottom: 38%;
   }
   .nut:hover {
     background-color: #ddd;
@@ -594,6 +587,7 @@
   .btn-login {
     margin-top: 2rem;
     width: 80%;
+    margin-bottom: 1.5rem;
   }
 
   .activities {
@@ -754,7 +748,223 @@
   }
 }
 @media only screen and (max-width: 575.98px) {
-  /* .container {
-    width: 85%;
-  } */
+  .container {
+    width: 93%;
+  }
+  .recent-news__heading h2,
+  .popular-courses__heading h2 {
+    font-size: 2.6rem;
+  }
+  .recent-news__heading p,
+  .popular-courses__heading p {
+    font-size: 1.2rem;
+  }
+  .popular-courses .row:last-of-type .col {
+    width: calc(100% - 2rem);
+  }
+  .app-footer > img {
+    height: 70rem;
+  }
+  .app-footer .container:first-of-type .col {
+    width: calc(100% - 2rem);
+  }
+  .app-footer .container:first-of-type .col:nth-of-type(2) {
+    margin-top: 3rem;
+  }
+  .app-footer .container:nth-of-type(2) img {
+    margin-bottom: 5px;
+  }
+  .app-footer .container:nth-of-type(2) img:not(:last-of-type) {
+    margin-right: 0;
+  }
+  .app-footer .container:nth-of-type(2) .row {
+    margin: 0 -3px;
+    justify-content: flex-start;
+  }
+  .app-footer .container:nth-of-type(2) .row img {
+    margin: 3px 3px;
+    width: calc(8rem - 6px);
+  }
+  .app-footer .container:nth-of-type(2) {
+    bottom: 8%;
+  }
+  .app-footer .container-fluid {
+    height: 10%;
+  }
+  .app-footer .container-fluid p {
+    font-size: 1.4rem;
+    margin-top: 4rem;
+  }
+  .recent-news .row:nth-of-type(2) .col {
+    width: calc(100% - 2rem);
+  }
+  .video .container img:last-of-type {
+    width: 5rem;
+    top: 13%;
+  }
+  .video h3 {
+    font-size: 1.8rem;
+    width: auto;
+    line-height: 2rem;
+    top: 50%;
+  }
+  .best-opportunity > img {
+    height: 40rem;
+  }
+  .best-opportunity .col {
+    width: 100%;
+  }
+  .fun-facts .row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .fun-facts .col {
+    width: 50%;
+  }
+  .fun-facts .col:first-of-type,
+  .fun-facts .col:nth-of-type(2) {
+    margin-bottom: 2rem;
+  }
+  .fun-facts img {
+    height: 17rem;
+  }
+  .video .container img:first-of-type {
+    height: 17rem;
+  }
+  .fun-facts__content {
+    padding-left: 0;
+  }
+  .fun-facts .col:not(:last-of-type) {
+    border-right: none;
+  }
+  .fun-facts .col .fun-facts__content {
+    margin-right: 0;
+    text-align: center;
+  }
+  .fun-facts .col:first-of-type .fun-facts__content {
+    margin-right: 0;
+  }
+  .subscribe-testimonials .row {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .subscribe-testimonials .col {
+    width: 100%;
+  }
+  .subscribe-testimonials .col:first-of-type {
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe__img {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .btn-prev {
+    top: 10%;
+  }
+  .btn-next {
+    bottom: 8%;
+  }
+
+  /* đang làm cái phản hồi của người dùng */
+  .testimonials__slider img:not(:last-of-type) {
+    width: 9rem;
+    height: 9rem;
+  }
+  .recent-courses__heading h2 {
+    font-size: 2.6rem;
+  }
+  .recent-courses__heading p {
+    font-size: 1.2rem;
+  }
+  .meet-friends__heading > p {
+    font-size: 1.2rem;
+  }
+  .recent-courses .row:nth-of-type(2) .col {
+    width: calc(100% - 2rem);
+  }
+  .meet-friends__text p {
+    width: auto;
+  }
+  .meet-friends__img {
+    margin-left: 1rem;
+  }
+  .meet-friends__text{
+    width: 73%;
+  }
+  .best-coaching > img{
+    height: 30rem;
+  }
+  .best-coaching .row{
+    flex-direction: column;
+  }
+  .best-coaching .col{
+    width: 100%;
+  }
+  .best-coaching .container{
+    top: 25%;
+  }
+  .best-coaching__text h4{
+    font-size: 1.3rem;
+  }
+  .best-coaching__text h2{
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    margin-top: 1rem;
+  }
+  .best-coaching__form{
+    top: 3rem;
+  }
+  .subscribe-testimonials .row{
+    padding-top: 22rem;
+  }
+  .slider h1{
+    font-size: 1.8rem;
+    width: auto;
+  }
+  .slider .container{
+    bottom: 45%;
+  }
+  .slider__container > img{
+    height: 25rem;
+    object-fit: cover;
+  }
+  .btn-more, .btn-start{
+    font-size: 1rem;
+    border-width: 1px;
+    padding: 1.1rem 2.2rem;
+  }
+
+  .activities{
+    bottom: -85%;
+  }
+  .activities .row{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .activities .col{
+    width: 33%;
+  }
+  .activities .col:hover{
+    transform: translate(0, 1rem);
+  }
+  .activities .col:nth-of-type(4),   .activities .col:nth-of-type(5){
+    margin-top: 3rem;
+  }
+  .meet-friends{
+    padding-top: 26rem;
+  }
+  .subscribe-testimonials .row{
+    padding-top: 10rem;
+  }
+  .recent-courses__menu--filter{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .btn-menu{
+    margin-bottom: 1rem;
+  }
+  .btn-login{
+    padding: 1.1rem 2.3rem;
+  }
 }
