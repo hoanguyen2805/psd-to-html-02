@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/reset.css" type="text/css">
     <link rel="stylesheet" href="./styles/style.css" type="text/css">
@@ -32,6 +32,7 @@
 </head>
 
 <body>
+
     <header>
         <nav class="top-bar">
             <div class="container-fluid">
@@ -61,7 +62,7 @@
 
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" id="myTopnav">
                     <div class="col">
                         <a href="#">LOGO</a>
                     </div>
@@ -81,9 +82,12 @@
                             <i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;&nbsp;LOGIN & REGISTER
                         </button>
                     </div>
+
+                    <button class="nut" onclick="openNav()"><i class="fa fa-bars"></i></button>
                 </div>
             </div>
         </nav>
+
     </header>
     <main>
         <section class="slider">
@@ -467,8 +471,8 @@
                         </div>
                         <div class="testimonials__content">
                             <h3>Testimonials</h3>
-                            <p>Dolore voluptate dolor magna anim culpa 
-                                consectetur proident laborum duis 
+                            <p>Dolore voluptate dolor magna anim culpa
+                                consectetur proident laborum duis
                                 exercitation
                                 anim aute.
                             </p>
@@ -808,7 +812,26 @@
         </section>
     </footer>
     <script>
+        function openNav() {
+            var x = document.querySelector(".top-bar .row:last-of-type .col:not(:first-of-type)");
+            if (x.className === "col") {
+                var cot = document.querySelectorAll(".top-bar .row:last-of-type .col:not(:first-of-type)");
+                for (let i = 0; i < cot.length; i++) {
+                    cot[i].className += " responsive";
+                }
+            } else {
+                var cot = document.querySelectorAll(".top-bar .row:last-of-type .col:not(:first-of-type)");
+                for (let i = 0; i < cot.length; i++) {
+                    console.log(cot[i].className);
+                    cot[i].className = cot[i].className.replace(" responsive", "");
+                }
+            }
+        }
 
+        // function closeNav() {
+        //     document.getElementById("mySidenav").style.width = "0";
+        //     document.querySelector(".top-bar .row:last-of-type").style.display = "none";
+        // }
         // Set the date we're counting down to
         var countDownDate = new Date("May 23, 2021 00:00:00").getTime();
 

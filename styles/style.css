@@ -1449,10 +1449,6 @@ video {
   justify-content: flex-start;
   margin: 0 -10px;
   margin-bottom: 3rem;
-  /* -webkit-box-shadow: -1px -1px 20px 0px rgba(243, 248, 248, 1);
-  -moz-box-shadow: -1px -1px 20px 0px rgba(243, 248, 248, 1);
-  box-shadow: -1px -1px 20px 0px rgba(243, 248, 248, 1);
-  background-color: rgba(248, 248, 248); */
 }
 .recent-courses{
   background-color: rgb(252, 252, 252);
@@ -1571,5 +1567,9 @@ video {
   width: 100%;
   object-fit: cover;
 }
+
 /* END ------------ */
 /* END RECENT-COURSES */
+.nut{
+  display: none;
+}
