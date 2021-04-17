@@ -287,7 +287,8 @@
                 </div>
                 <div class="row">
                     <div class="col filterDiv design exercise art">
-                        <div class="recent-courses__container">
+                        <div class="recent-courses__container" onmouseover="eventHover(this, 0)"
+                            onmouseout="eventOut(this, 0)">
                             <div class="recent-courses__img">
                                 <a href="#"><img src="./images/recent-courses-01.png" alt="recent-news-01"></a>
                                 <div class="recent-courses__number">
@@ -310,7 +311,8 @@
                         </div>
                     </div>
                     <div class="col filterDiv exercise">
-                        <div class="recent-courses__container">
+                        <div class="recent-courses__container" onmouseover="eventHover(this, 1)"
+                            onmouseout="eventOut(this, 1)">
                             <div class="recent-courses__img">
                                 <a href="#"><img src="./images/recent-courses-05.png" alt="recent-news-01"></a>
                                 <div class="recent-courses__number">
@@ -333,7 +335,8 @@
                         </div>
                     </div>
                     <div class="col filterDiv exercise music">
-                        <div class="recent-courses__container">
+                        <div class="recent-courses__container" onmouseover="eventHover(this, 2)"
+                            onmouseout="eventOut(this, 2)">
                             <div class="recent-courses__img">
                                 <a href="#"><img src="./images/recent-courses-03.png" alt="recent-news-01"></a>
                                 <div class="recent-courses__number">
@@ -356,7 +359,8 @@
                         </div>
                     </div>
                     <div class="col filterDiv exercise music">
-                        <div class="recent-courses__container">
+                        <div class="recent-courses__container" onmouseover="eventHover(this, 3)"
+                            onmouseout="eventOut(this, 3)">
                             <div class="recent-courses__img">
                                 <a href="#"><img src="./images/recent-courses-03.png" alt="recent-news-01"></a>
                                 <div class="recent-courses__number">
@@ -379,7 +383,8 @@
                         </div>
                     </div>
                     <div class="col filterDiv design art music">
-                        <div class="recent-courses__container">
+                        <div class="recent-courses__container" onmouseover="eventHover(this, 4)"
+                            onmouseout="eventOut(this, 4)">
                             <div class="recent-courses__img">
                                 <a href="#"><img src="./images/recent-courses-05.png" alt="recent-news-01"></a>
                                 <div class="recent-courses__number">
@@ -401,8 +406,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col filterDiv exercise art">
-                        <div class="recent-courses__container">
+                    <div class="col filterDiv art">
+                        <div class="recent-courses__container" onmouseover="eventHover(this, 5)"
+                            onmouseout="eventOut(this, 5)">
                             <div class="recent-courses__img">
                                 <a href="#"><img src="./images/recent-courses-01.png" alt="recent-news-01"></a>
                                 <div class="recent-courses__number">
@@ -812,6 +818,61 @@
         </section>
     </footer>
     <script>
+        // hover
+        console.log();
+        var mouse = document.getElementsByClassName("recent-courses__container");
+        var hinh = document.querySelectorAll(".recent-courses__img img");
+
+        function eventHover(ele, n) {
+            if (window.screen.width >= 992) {
+                var index = n + 3;
+                for (var i = 0; i < hinh.length; i++) {
+                    if (n == i) {
+                        hinh[n].style.height = hinh[n].clientHeight - 50 + "px";
+                        hinh[n].style.width = "100%";
+                    }
+                    if (index == i) {
+                        if (hinh[index].clientHeight == 0) {
+                            hinh[index].style.height = hinh[n].clientHeight;
+                        }
+                        else {
+                            hinh[index].style.height = hinh[index].clientHeight + 50 + "px";
+                            hinh[index].style.objectFit = "cover";
+                        }
+
+                        mouse[index].style.transform = "translate(0, -50px)";
+                    }
+                }
+            }
+            else {
+                hinh[n].style.height = hinh[n].clientHeight - 50 + "px";
+                hinh[n].style.width = "100%";
+            }
+
+        }
+        function eventOut(els, n) {
+            if (window.screen.width >= 992) {
+                var index = n + 3;
+                for (var i = 0; i < hinh.length; i++) {
+                    if (n == i) {
+                        hinh[n].style.height = hinh[n].clientHeight + 50 + "px";
+                        hinh[n].style.width = "100%"
+                    }
+                    if (index == i) {
+                        hinh[index].style.height = hinh[index].clientHeight - 50 + "px";
+                        mouse[index].style.transform = "translate(0, 0)";
+                    }
+                }
+            }
+            else {
+                hinh[n].style.height = hinh[n].clientHeight + 50 + "px";
+                hinh[n].style.width = "100%"
+            }
+
+        }
+
+        // hover end
+
         function openNav() {
             var x = document.querySelector(".top-bar .row:last-of-type .col:not(:first-of-type)");
             if (x.className === "col") {
@@ -828,10 +889,6 @@
             }
         }
 
-        // function closeNav() {
-        //     document.getElementById("mySidenav").style.width = "0";
-        //     document.querySelector(".top-bar .row:last-of-type").style.display = "none";
-        // }
         // Set the date we're counting down to
         var countDownDate = new Date("May 23, 2021 00:00:00").getTime();
 

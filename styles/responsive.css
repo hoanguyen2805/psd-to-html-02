@@ -876,7 +876,6 @@
     bottom: 8%;
   }
 
-  /* đang làm cái phản hồi của người dùng */
   .testimonials__slider img:not(:last-of-type) {
     width: 9rem;
     height: 9rem;

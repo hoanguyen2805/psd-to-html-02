@@ -34,7 +34,7 @@ function w3RemoveClass(element, name) {
 var btns = document.getElementsByClassName("btn-menu");
 
 for (var i = 0; i < btns.length; i++) {
-    console.log(btns[i]);
+    // console.log(btns[i]);
     btns[i].addEventListener("click", function () {
         var current = document.getElementsByClassName("active");
         console.log(current);
