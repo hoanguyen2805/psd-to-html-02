@@ -1,7 +1,3 @@
-/* Set up các giá trị mặc định */
-/* font-family: Biko, "Courier New", Courier; */
-/* font-family: "Poppins", sans-serif; */
-/* font-family: Roboto, Oxygen; */
 html {
   font-size: 62.5%;
 }
@@ -42,6 +38,21 @@ a {
 body {
   font-family: "Poppins", sans-serif;
 }
+
+/* input,
+button,
+textarea,
+select {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    outline: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+} */
+
 @font-face {
   font-family: Biko;
   src: url(../fonts/Biko_Black.otf);
@@ -1533,7 +1544,9 @@ video {
 .recent-courses__container:hover .btn-arrow span {
   display: inline-block;
 }
-
+/* .recent-courses__container:hover{
+  cursor: pointer;
+} */
 .popular-courses__container:hover{
   transform: translate(0, -3rem);
 }
