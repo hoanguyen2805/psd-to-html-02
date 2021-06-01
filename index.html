@@ -819,7 +819,6 @@
     </footer>
     <script>
         // hover
-        console.log();
         var mouse = document.getElementsByClassName("recent-courses__container");
         var hinh = document.querySelectorAll(".recent-courses__img img");
 
@@ -1022,8 +1021,8 @@
 
         // Slider header
         var index = 0;
-        hien();
-        function hien() {
+        showSlider();
+        function showSlider() {
             var i;
             var slides = document.getElementsByClassName("slider-x");
             for (i = 0; i < slides.length; i++) {
@@ -1033,7 +1032,7 @@
             if (index > slides.length) { index = 1 }
 
             slides[index - 1].style.display = "block";
-            setTimeout(hien, 3000); // Change image every 2 seconds
+            setTimeout(showSlider, 3000); // Change image every 2 seconds
         }
 
     </script>
